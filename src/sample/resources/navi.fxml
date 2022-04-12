@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:id="navi" prefHeight="${navi.parent.height}" maxWidth="240.0"
+      style="-fx-background-color: #999999;"
+      fx:controller="sample.controllers.NaviController">
+    <Pane prefHeight="80.0" prefWidth="240.0" style="-fx-background-color: #777777;">
+        <Label fx:id="username" layoutX="20.0" layoutY="20.0" text="Użytkownik" style="-fx-font-weight: bold;">
+            <font>
+                <Font name="Garamond" size="24.0" />
+            </font>
+        </Label>
+    </Pane>
+    <Button layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" text="Strona główna"
+            onAction="#home">
+        <font>
+            <Font name="Rockwell" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutY="150.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" text="Moje notatki"
+            onAction="#list">
+        <font>
+            <Font name="Rockwell" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" text="Stwórz notatkę"
+            onAction="#createNote">
+        <font>
+            <Font name="Rockwell" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutY="250.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" text="Wyloguj" onAction="#logout">
+        <font>
+            <Font name="Rockwell" size="12.0"/>
+        </font>
+    </Button>
+
+    <Label fx:id="dateTime" layoutX="300.0" layoutY="40.0">
+        <font>
+            <Font name="Garamond" size="24.0"/>
+        </font>
+    </Label>
+</VBox>
